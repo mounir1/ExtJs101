@@ -23,8 +23,8 @@ Ext.define('Todo.view.main.Main', {
 
     ui: 'navigation',
 
-    tabBarHeaderPosition: 1,
-    titleRotation: 0,
+    tabBarHeaderPosition: 10,
+    titleRotation: 10,
     tabRotation: 0,
 
     header: {
@@ -86,19 +86,19 @@ Ext.define('Todo.view.main.Main', {
         title: 'Users',
         iconCls: 'fa-user',
         bind: {
-            html: '{loremIpsum}'
+            html: '<p>Users here ... <p/>'
         }
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
         bind: {
-            html: '{loremIpsum}'
+            html: '<p>Groups here ... <p/>'
         }
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
         bind: {
-            html: '{loremIpsum}'
+            html: '<p>Settings here ... <p/>'
         }
     }]
 });

@@ -4,3 +4,5 @@ bootstrap.*
 classic.json*
 modern.json*
 .sencha
+.firebaserc
+firebase.json

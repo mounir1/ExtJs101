@@ -6,7 +6,7 @@
 Ext.define('Todo.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'Todo',
+    name: 'Dashboard',
 
     quickTips: false,
     platformConfig: {
@@ -14,7 +14,10 @@ Ext.define('Todo.Application', {
             quickTips: true
         }
     },
-
+    profiles: [
+        'Tablet',
+        'Phone'
+        ],
     onAppUpdate: function () {
         Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
             function (choice) {
