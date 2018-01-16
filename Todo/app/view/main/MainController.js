@@ -3,12 +3,15 @@
  * the "controller" of the Main view class.
  */
 Ext.define('New.view.main.MainController', {
-    extend: 'Ext.app.ViewController',
-
+    extend: 'Ext.app.ViewController', 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) { 
-        Ext.Msg.confirm('Confirm',  'Alert Box', 'onConfirm', this);
+    onClickButton: function () {
+        Ext.Msg.alert('Confirm', 'Are you sure?');
+    },
+
+    onItemSelected: function (sender, record) {
+        Ext.Msg.confirm('Confirm', 'Alert Box', 'onConfirm', this);
 
     },
 

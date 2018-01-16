@@ -33,23 +33,39 @@ Ext.define('New.view.main.Main', {
             items: [{
                 xtype: 'mainlist'
             }]
-        },{
+        }, {
             title: 'Users',
             iconCls: 'x-fa fa-user',
             bind: {
                 html: '{Users}'
             }
-        },{
+        }, {
             title: 'Groups',
             iconCls: 'x-fa fa-users',
             bind: {
                 html: '{Groups}'
             }
-        },{
+        }, {
             title: 'Settings',
             iconCls: 'x-fa fa-cog',
             bind: {
                 html: '{Settings}'
+            }
+        }, {
+            title: 'Component',
+            xtype: 'component',
+            iconCls: 'fa-twitter',
+            bind: {
+                html: '{introText}'
+            }
+        },
+        {
+            title: 'Button',
+            xtype: 'button',
+            iconCls: 'fa-google',
+            bind: {
+                text: '{buttonText}',
+                handler: 'onClickButton'
             }
         }
     ]

@@ -15,7 +15,7 @@ Ext.define('New.view.main.Main', {
 
         'New.view.main.MainController',
         'New.view.main.MainModel',
-        'New.view.main.List'
+        'New.view.main.List'    
     ],
 
     controller: 'main',
@@ -76,29 +76,53 @@ Ext.define('New.view.main.Main', {
     },
 
     items: [{
-        title: 'Home',
-        iconCls: 'fa-home',
-        // The following grid shares a store with the classic version's grid as well!
-        items: [{
-            xtype: 'mainlist'
-        }]
-    }, {
-        title: 'Users',
-        iconCls: 'fa-user',
-        bind: {
-            html: '{Users}'
+            title: 'Home',
+            iconCls: 'fa-home',
+            // The following grid shares a store with the classic version's grid as well!
+            items: [{
+                xtype: 'mainlist'
+            }]
+        }, {
+            title: 'Users',
+            iconCls: 'fa-user',
+            bind: {
+                html: '{Users}'
+            }
+        }, {
+            title: 'Groups',
+            iconCls: 'fa-users',
+            bind: {
+                html: '{Groups}'
+            }
+        }, {
+            title: 'Settings',
+            iconCls: 'fa-cog',
+            bind: {
+                html: '{Settings}'
+            }
+        }, {
+            title: 'Component',
+            xtype: 'component',
+            iconCls: 'fa-twitter',
+            bind: {
+                html: '{introText}'
+            }
+        },
+        {
+            title: 'Button',
+            xtype: 'button',
+            iconCls: 'fa-google',
+            bind: {
+                text: '{buttonText}',
+                handler: 'onClickButton'
+            }
+        },
+        {
+            title: 'Developer', 
+            iconCls: 'fa-university', 
+            bind: {
+                html: '{mounir}' 
+            }
         }
-    }, {
-        title: 'Groups',
-        iconCls: 'fa-users',
-        bind: {
-            html: '{Groups}'
-        }
-    }, {
-        title: 'Settings',
-        iconCls: 'fa-cog',
-        bind: {
-            html: '{Settings}'
-        }
-    }]
+    ]
 });

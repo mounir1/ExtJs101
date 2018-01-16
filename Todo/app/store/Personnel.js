@@ -35,6 +35,7 @@ Ext.define('New.store.Personnel', {
 
     proxy: {
         type: 'memory',
+        url:'data.json',
         reader: {
             type: 'json',
             rootProperty: 'items'
