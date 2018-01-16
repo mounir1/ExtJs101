@@ -3,7 +3,7 @@
  * "mainView" property. That setting causes an instance of this class to be created and
  * added to the Viewport container.
  */
-Ext.define('Todo.view.main.Main', {
+Ext.define('New.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 

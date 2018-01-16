@@ -1,7 +1,7 @@
-Ext.define('Todo.model.Base', {
+Ext.define('New.model.Base', {
     extend: 'Ext.data.Model',
 
     schema: {
-        namespace: 'Todo.model'
+        namespace: 'New.model'
     }
 });

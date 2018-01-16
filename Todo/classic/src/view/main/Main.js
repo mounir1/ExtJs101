@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('Todo.view.main.Main', {
+Ext.define('New.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
@@ -13,9 +13,9 @@ Ext.define('Todo.view.main.Main', {
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
 
-        'Todo.view.main.MainController',
-        'Todo.view.main.MainModel',
-        'Todo.view.main.List'
+        'New.view.main.MainController',
+        'New.view.main.MainModel',
+        'New.view.main.List'
     ],
 
     controller: 'main',
@@ -23,8 +23,8 @@ Ext.define('Todo.view.main.Main', {
 
     ui: 'navigation',
 
-    tabBarHeaderPosition: 10,
-    titleRotation: 10,
+    tabBarHeaderPosition: 1,
+    titleRotation: 0,
     tabRotation: 0,
 
     header: {
@@ -86,19 +86,19 @@ Ext.define('Todo.view.main.Main', {
         title: 'Users',
         iconCls: 'fa-user',
         bind: {
-            html: '<p>Users here ... <p/>'
+            html: '{loremIpsum}'
         }
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
         bind: {
-            html: '<p>Groups here ... <p/>'
+            html: '{loremIpsum}'
         }
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
         bind: {
-            html: '<p>Settings here ... <p/>'
+            html: '{loremIpsum}'
         }
     }]
 });

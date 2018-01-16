@@ -1,13 +1,11 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('Todo.view.main.List', {
+Ext.define('New.view.main.List', {
     extend: 'Ext.grid.Grid',
     xtype: 'mainlist',
 
-    requires: [
-        'Todo.store.Personnel'
-    ],
+    requires: ['New.store.Personnel'],
 
     title: 'Personnel',
 
@@ -15,7 +13,7 @@ Ext.define('Todo.view.main.List', {
         type: 'personnel'
     },
 
-    columns: [{ 
+    columns: [{
         text: 'Name',
         dataIndex: 'name',
         width: 100,
@@ -25,11 +23,11 @@ Ext.define('Todo.view.main.List', {
     }, {
         text: 'Email',
         dataIndex: 'email',
-        width: 230 
-    }, { 
+        width: 230
+    }, {
         text: 'Phone',
         dataIndex: 'phone',
-        width: 150 
+        width: 150
     }],
 
     listeners: {

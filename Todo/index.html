@@ -1,12 +1,11 @@
 <!DOCTYPE HTML>
 <html manifest="">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
 
-    <title>Todo</title>
+    <title>New</title>
 
     <script type="text/javascript">
         var Ext = Ext || {}; // Ext namespace won't be defined yet...
@@ -28,12 +27,6 @@
             }
             else if (s.match(/\bmodern\b/)) {
                 profile = 'modern';
-            } 
-            else if (s.match(/\bandroid\b/) || (tags.android && tags.isMobile)) {
-                profile = 'android';
-            }
-            else if (s.match(/\bwindows\b/) || (tags.windows && tags.isMobile)){
-                profile = 'windows';
             }
             else {
                 profile = tags.desktop ? 'classic' : 'modern';
@@ -46,16 +39,14 @@
             // any data is pulled from it.
             //
             //return function (manifest) {
-            // peek at / modify the manifest object
+                // peek at / modify the manifest object
             //};
         };
     </script>
 
     <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-    <script id="microloader" data-app="b757187d-8d2b-448f-ad59-80fc0e5eccb9" type="text/javascript" src="bootstrap.js"></script>
+    <script id="microloader" data-app="8e79fd44-d0d6-459f-8284-722936286529" type="text/javascript" src="bootstrap.js"></script>
 
 </head>
-
 <body></body>
-
 </html>

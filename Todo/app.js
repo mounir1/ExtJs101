@@ -3,16 +3,16 @@
  * and launch() the Application class.
  */
 Ext.application({
-    extend: 'Todo.Application',
+    extend: 'New.Application',
 
-    name: 'Todo',
+    name: 'New',
 
     requires: [
-        // This will automatically load all classes in the Todo namespace
+        // This will automatically load all classes in the New namespace
         // so that application classes do not need to require each other.
-        'Todo.*'
+        'New.*'
     ],
 
     // The name of the initial view to create.
-    mainView: 'Todo.view.main.Main'
+    mainView: 'New.view.main.Main'
 });

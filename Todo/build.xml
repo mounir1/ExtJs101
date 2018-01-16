@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="Todo" default=".help">
+<project name="New" default=".help">
 
     <!-- Find and load Sencha Cmd ant tasks -->
     <script language="javascript">

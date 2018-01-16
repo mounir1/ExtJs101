@@ -3,10 +3,10 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('Todo.Application', {
+Ext.define('New.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'Dashboard',
+    name: 'New',
 
     quickTips: false,
     platformConfig: {
@@ -14,10 +14,7 @@ Ext.define('Todo.Application', {
             quickTips: true
         }
     },
-    profiles: [
-        'Tablet',
-        'Phone'
-        ],
+
     onAppUpdate: function () {
         Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
             function (choice) {
