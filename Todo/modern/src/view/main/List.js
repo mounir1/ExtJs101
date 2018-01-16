@@ -28,6 +28,11 @@ Ext.define('New.view.main.List', {
         text: 'Phone',
         dataIndex: 'phone',
         width: 150
+    },
+    {
+        text: 'Address',
+        dataIndex: 'address',
+        width: 150
     }],
 
     listeners: {

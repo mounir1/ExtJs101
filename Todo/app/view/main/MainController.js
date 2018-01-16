@@ -7,13 +7,14 @@ Ext.define('New.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+    onItemSelected: function (sender, record) { 
+        Ext.Msg.confirm('Confirm',  'Alert Box', 'onConfirm', this);
+
     },
 
     onConfirm: function (choice) {
         if (choice === 'yes') {
-            //
+            alert('Good Bye');
         }
     }
 });

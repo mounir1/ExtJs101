@@ -37,19 +37,19 @@ Ext.define('New.view.main.Main', {
             title: 'Users',
             iconCls: 'x-fa fa-user',
             bind: {
-                html: '{loremIpsum}'
+                html: '{Users}'
             }
         },{
             title: 'Groups',
             iconCls: 'x-fa fa-users',
             bind: {
-                html: '{loremIpsum}'
+                html: '{Groups}'
             }
         },{
             title: 'Settings',
             iconCls: 'x-fa fa-cog',
             bind: {
-                html: '{loremIpsum}'
+                html: '{Settings}'
             }
         }
     ]
