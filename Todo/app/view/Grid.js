@@ -13,7 +13,7 @@ Ext.define('Fiddle.view.Grid', {
     },
 
     controller: 'mygridpanel_controller',
-    title: 'My Grid Panel',
+    title: 'Add Users',
 
     bind: {
         store: '{Names}'
@@ -25,6 +25,7 @@ Ext.define('Fiddle.view.Grid', {
 
     columns: [{
         xtype: 'gridcolumn',
+        width: 100,
         dataIndex: 'first_name',
         text: 'First Name',
         editor: {
@@ -33,18 +34,20 @@ Ext.define('Fiddle.view.Grid', {
     }, {
         xtype: 'gridcolumn',
         dataIndex: 'last_name',
+        width: 150,
         text: 'Last Name',
         editor: {
             xtype: 'textfield'
         }
     }, {
         xtype: 'gridcolumn',
+        width: 150,
         dataIndex: 'phone_number',
         text: 'Phone Number',
         editor: { xtype: 'textfield' }
     }, {
         xtype: 'actioncolumn',
-        width: 50,
+        width: 90,
         sortable: true,
         menuDisabled: true,
         align: 'center',
@@ -58,7 +61,7 @@ Ext.define('Fiddle.view.Grid', {
 
     dockedItems: [{
         xtype: 'toolbar',
-        dock: 'bottom',
+        dock: 'top',
         items: [{
             xtype: 'form',
             reference: 'name_form',
@@ -67,32 +70,38 @@ Ext.define('Fiddle.view.Grid', {
                 align: 'stretch'
             },
             defaults: {
-                labelWidth: 35
+                labelWidth: 120
             },
-            items: [{
-                xtype: 'textfield',
-                fieldLabel: 'First Name',
-                allowBlank: false,
-                name: 'first_name'
-            }, {
-                xtype: 'textfield',
-                fieldLabel: 'Last Name',
-                margin: '20 20 20 10',
-                allowBlank: false,
-                name: 'last_name'
-            },
-            {
-                xtype: 'textfield',
-                fieldLabel: 'Phone Number',
-                margin: '20 20 20 10',
-                allowBlank: false,
-                name: 'phone_number'
-            }]
+            items:
+                [
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: 'First Name',
+                        allowBlank: false,
+                        margin: '0,0,0,10',
+                        name: 'first_name'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: 'Last Name',
+                        allowBlank: false,
+                        margin: '0,0,0,10',
+                        name: 'last_name'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: 'Phone Number',
+                        allowBlank: false,
+                        margin: '0,0,0,10',
+                        name: 'phone_number'
+                    }
+                ]
         }, {
             xtype: 'button',
-            text: 'Add Name',
+            text: 'Add User',
             handler: 'onAdd'
-        }]
+        }
+    ]
     }],
 
     plugins: [{

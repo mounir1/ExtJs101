@@ -114,7 +114,7 @@ Ext.define('New.view.main.Main', {
         },
         {
             title: 'Developer', 
-            iconCls: 'fa-university', 
+            iconCls: 'fa-code', 
             bind: {
                 html: '{mounir}' 
             }
