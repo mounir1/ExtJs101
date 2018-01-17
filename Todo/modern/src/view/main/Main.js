@@ -3,7 +3,7 @@
  * "mainView" property. That setting causes an instance of this class to be created and
  * added to the Viewport container.
  */
-Ext.define('Todo.view.main.Main', {
+Ext.define('New.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
@@ -33,23 +33,39 @@ Ext.define('Todo.view.main.Main', {
             items: [{
                 xtype: 'mainlist'
             }]
-        },{
+        }, {
             title: 'Users',
             iconCls: 'x-fa fa-user',
             bind: {
-                html: '{loremIpsum}'
+                html: '{Users}'
             }
-        },{
+        }, {
             title: 'Groups',
             iconCls: 'x-fa fa-users',
             bind: {
-                html: '{loremIpsum}'
+                html: '{Groups}'
             }
-        },{
+        }, {
             title: 'Settings',
             iconCls: 'x-fa fa-cog',
             bind: {
-                html: '{loremIpsum}'
+                html: '{Settings}'
+            }
+        }, {
+            title: 'Component',
+            xtype: 'component',
+            iconCls: 'fa-twitter',
+            bind: {
+                html: '{introText}'
+            }
+        },
+        {
+            title: 'Button',
+            xtype: 'button',
+            iconCls: 'fa-google',
+            bind: {
+                text: '{buttonText}',
+                handler: 'onClickButton'
             }
         }
     ]

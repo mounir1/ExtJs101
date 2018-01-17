@@ -3,16 +3,16 @@
  * and launch() the Application class.
  */
 Ext.application({
-    extend: 'New.Application',
+    extend: 'ArchitectureCms.Application',
 
-    name: 'New',
+    name: 'ArchitectureCms',
 
     requires: [
-        // This will automatically load all classes in the New namespace
+        // This will automatically load all classes in the ArchitectureCms namespace
         // so that application classes do not need to require each other.
-        'New.*'
+        'ArchitectureCms.*'
     ],
 
     // The name of the initial view to create.
-    mainView: 'New.view.main.Main'
+    mainView: 'ArchitectureCms.view.main.Main'
 });

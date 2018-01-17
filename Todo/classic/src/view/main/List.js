@@ -1,12 +1,12 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('Todo.view.main.List', {
+Ext.define('New.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
 
     requires: [
-        'Todo.store.Personnel'
+        'New.store.Personnel'
     ],
 
     title: 'Personnel',

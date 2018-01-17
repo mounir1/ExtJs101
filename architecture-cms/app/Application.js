@@ -3,10 +3,10 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('New.Application', {
+Ext.define('ArchitectureCms.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'New',
+    name: 'ArchitectureCms',
 
     quickTips: false,
     platformConfig: {
