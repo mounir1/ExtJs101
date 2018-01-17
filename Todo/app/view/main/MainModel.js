@@ -7,7 +7,7 @@ Ext.define('New.view.main.MainModel', {
     alias: 'viewmodel.main',
 
     data: {
-        name: 'Dashboard',
+        name: 'ExtJS101',
 
         Users: 'Users here',
     

@@ -1,10 +1,4 @@
-/**
- * This class is the main view for the application. It is specified in app.js as the
- * "mainView" property. That setting automatically applies the "viewport"
- * plugin causing this view to become the body element (i.e., the viewport).
- *
- * TODO - Replace this content of this view to suite the needs of your application.
- */
+
 Ext.define('New.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
@@ -12,10 +6,10 @@ Ext.define('New.view.main.Main', {
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-
         'New.view.main.MainController',
         'New.view.main.MainModel',
-        'New.view.main.List'    
+        'New.view.main.List' ,
+        'Fiddle.view.Grid'           
     ],
 
     controller: 'main',
@@ -82,12 +76,13 @@ Ext.define('New.view.main.Main', {
             items: [{
                 xtype: 'mainlist'
             }]
-        }, {
+        },
+        {
             title: 'Users',
             iconCls: 'fa-user',
-            bind: {
-                html: '{Users}'
-            }
+            items: [{
+                xtype: 'maingrid'
+            }]
         }, {
             title: 'Groups',
             iconCls: 'fa-users',
