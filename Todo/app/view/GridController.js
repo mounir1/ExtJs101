@@ -1,4 +1,4 @@
-Ext.define('Fiddle.view.GridController', {
+Ext.define('Todo.view.GridController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.mygridpanel_controller',
 

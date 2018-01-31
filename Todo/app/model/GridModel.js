@@ -1,15 +1,15 @@
-Ext.define('Fiddle.view.GridModel', {
+Ext.define('Todo.view.GridModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.mygridpanel_model',
 
     requires: [
-        'Fiddle.model.User'
+        'Todo.model.User'
     ],
 
     stores: {
         Names: {
             autoLoad: true,
-            model: 'Fiddle.model.User'
+            model: 'Todo.model.User'
         }
     }
 });

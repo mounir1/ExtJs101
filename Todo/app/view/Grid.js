@@ -1,11 +1,11 @@
-Ext.define('Fiddle.view.Grid', {
+Ext.define('Todo.view.Grid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.mygridpanel',
     xtype: 'maingrid',
 
     requires: [
-        'Fiddle.view.GridController',
-        'Fiddle.view.GridModel'
+        'Todo.view.GridController',
+        'Todo.view.GridModel'
     ],
 
     viewModel: {

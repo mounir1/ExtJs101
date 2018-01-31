@@ -9,7 +9,9 @@ Ext.define('New.view.main.Main', {
 
     requires: [
         'Ext.MessageBox',
-        'Ext.layout.Fit'
+        'Ext.layout.Fit',
+        'Todo.view.login.Login',
+        'Todo.view.Grid'   
     ],
 
     controller: 'main',
@@ -36,15 +38,13 @@ Ext.define('New.view.main.Main', {
         }, {
             title: 'Users',
             iconCls: 'x-fa fa-user',
-            bind: {
-                html: '{Users}'
-            }
-        }, {
-            title: 'Groups',
-            iconCls: 'x-fa fa-users',
-            bind: {
-                html: '{Groups}'
-            }
+            items: [{
+                xtype: 'maingrid'
+            }]
+        },  {
+            title: 'Login',
+            iconCls: 'fa-auth',
+            xtype : 'login'
         }, {
             title: 'Settings',
             iconCls: 'x-fa fa-cog',

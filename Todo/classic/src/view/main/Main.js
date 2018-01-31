@@ -9,7 +9,8 @@ Ext.define('New.view.main.Main', {
         'New.view.main.MainController',
         'New.view.main.MainModel',
         'New.view.main.List' ,
-        'Fiddle.view.Grid'           
+        'Todo.view.login.Login',
+        'Todo.view.Grid'           
     ],
 
     controller: 'main',
@@ -84,18 +85,10 @@ Ext.define('New.view.main.Main', {
                 xtype: 'maingrid'
             }]
         }, {
-            title: 'Groups',
-            iconCls: 'fa-users',
-            bind: {
-                html: '{Groups}'
-            }
-        }, {
-            title: 'Settings',
+            title: 'Login',
             iconCls: 'fa-cog',
-            bind: {
-                html: '{Settings}'
-            }
-        }, {
+            xtype : 'login'
+        },  {
             title: 'Component',
             xtype: 'component',
             iconCls: 'fa-twitter',
