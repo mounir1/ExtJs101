@@ -96,11 +96,9 @@
             background-image: -ms-linear-gradient(top, #48C6D4, #3EACBA);
             background-image: -o-linear-gradient(top, #48C6D4, #3EACBA);
             background-image: linear-gradient(top, #48C6D4, #3EACBA);
-
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
-
             -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
             -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
             box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
@@ -114,13 +112,42 @@
             background-image: -o-linear-gradient(top, #3EACBA, #48C6D4);
             background-image: linear-gradient(top, #3EACBA, #48C6D4);
         }
+
+        .green {
+            text-shadow: -1px -1px 0 rgb(5, 152, 15);
+            background: rgb(83, 186, 62);
+            border: 1px solid rgb(57, 211, 96);
+            background-image: -webkit-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            background-image: -moz-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            background-image: -ms-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            background-image: -o-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            background-image: linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(5, 152, 15), 0 4px 2px rgba(0, 0, 0, .5);
+            -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(5, 152, 15), 0 4px 2px rgba(0, 0, 0, .5);
+            box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(5, 152, 15), 0 4px 2px rgba(0, 0, 0, .5);
+        }
+
+        .green:hover {
+            background: rgb(5, 152, 15);
+            background-image: -webkit-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            background-image: -moz-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            background-image: -ms-linear-gradient(top, rgb(32, 208, 96) rgb(5, 152, 15));
+            background-image: -o-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+            background-image: linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
+        }
     </style>
 </head>
 
 <body>
     <canvas></canvas>
 
-    <div>
+    <div style="margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;object-fit: cover;">
         <a href="todo" class="push_button red">Todo</a>
         <a href="instrumantics" class="push_button blue">Instrumantics</a>
         <a href="dashboard" class="push_button green">Dashboard</a>
@@ -129,7 +156,8 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
     $(function () {
-        var canvas = document.querySelector('canvas'), ctx = canvas.getContext('2d');
+        var canvas = document.querySelector('canvas'),
+            ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         ctx.lineWidth = .3;
