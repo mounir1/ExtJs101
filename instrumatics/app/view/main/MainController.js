@@ -1,19 +1,22 @@
-/**
- * This class is the controller for the main view for the application. It is specified as
- * the "controller" of the Main view class.
- */
 Ext.define('Instrumatics.view.main.MainController', {
     extend: 'Ext.app.ViewController',
-
-    alias: 'controller.main',
-
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+    alias: 'controller.main-main',
+    routes: {
+        ':controller': 'onNavigate'
     },
-
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
+    listen: {
+        component: {
+            'tabpanel': {
+                tabchange: 'onTabChange'
+            }
         }
+    },
+    onTabChange: function (tab, newCmp, oldCmp) {
+        this.redirectTo(newCmp.getReference());
+    },
+    onNavigate: function (controller) {
+        var view = this.getView();
+        view.setActiveTab(view.lookupReference(controller));
     }
 });
+ 
