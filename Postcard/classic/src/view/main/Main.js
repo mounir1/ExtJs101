@@ -1,6 +1,13 @@
 Ext.define('Postcard.view.main.Main', {
-    extend: 'Ext.Panel',
+    extend: 'Ext.panel.Panel',
     xtype: 'app-main',
+    requires: [
+        'Postcard.view.composer.Composer',
+        'Postcard.view.header.Header',
+        'Postcard.view.login.Login',
+        'Postcard.view.messages.Messages',
+        'Postcard.view.threads.Threads'
+    ],
     plugins: ['viewport', 'responsive'],
     controller: 'main',
     viewModel: 'main',
@@ -24,7 +31,6 @@ Ext.define('Postcard.view.main.Main', {
         {
             dock: 'bottom',
             xtype: 'button',
-            width:150,
             cls: 'logout',
             overCls: '',
             focusCls: '',

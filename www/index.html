@@ -2,11 +2,12 @@
 
 <head>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <title>ExtJS 101 | Mounir Abderrahmani</title>
     <style>
         html,
         body {
             background: #000;
-            padding: 20px;
+            padding: 10px;
         }
 
         canvas {
@@ -138,19 +139,44 @@
             background-image: -o-linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
             background-image: linear-gradient(top, rgb(32, 208, 96), rgb(5, 152, 15));
         }
+
+        .yellow {
+            text-shadow: -1px -1px 0 rgb(249, 249, 6);
+            background: rgba(241, 250, 64, 0.995);
+            border: 1px solid rgb(244, 255, 33);
+            background-image: -webkit-linear-gradient(top, rgba(241, 250, 64, 0.995), rrgba(241, 250, 64, 0.995));
+            background-image: -moz-linear-gradient(top, rgba(241, 250, 64, 0.995), rgba(241, 250, 64, 0.995));
+            background-image: -ms-linear-gradient(top, rgba(241, 250, 64, 0.995), rgba(241, 250, 64, 0.995));
+            background-image: -o-linear-gradient(top, rgba(241, 250, 64, 0.995), rgba(241, 250, 64, 0.995));
+            background-image: linear-gradient(top, rgba(241, 250, 64, 0.995), rgba(241, 250, 64, 0.995));
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(5, 152, 15), 0 4px 2px rgba(0, 0, 0, .5);
+            -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(5, 152, 15), 0 4px 2px rgba(0, 0, 0, .5);
+            box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(5, 152, 15), 0 4px 2px rgba(0, 0, 0, .5);
+        }
+
+        .yellow:hover {
+            background: rgb(245, 200, 17);
+            background-image: -webkit-linear-gradient(top, rgb(245, 200, 17), rgb(245, 200, 17));
+            background-image: -moz-linear-gradient(top, rgb(245, 200, 17), rgb(245, 200, 17));
+            background-image: -ms-linear-gradient(top, rgb(245, 200, 17), rgb(245, 200, 17));
+            background-image: -o-linear-gradient(top, rgb(245, 200, 17), rgb(245, 200, 17));
+            background-image: linear-gradient(top, rgb(245, 200, 17), rgb(245, 200, 17));
+        }
     </style>
 </head>
 
 <body>
     <canvas></canvas>
 
-    <div style="margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;object-fit: cover;">
-        <a href="todo" class="push_button red">Todo</a>
-        <a href="instrumantics" class="push_button blue">Instrumantics</a>
-        <a href="dashboard" class="push_button green">Dashboard</a>
+    <div style="margin: auto; width: 50%; border: 2px solid red; padding: 10px;object-fit: cover;">
+        <h1 style="color:white">EXTJS 101 Practice by Mounir Abderrahmani</h1>
+        <a href="New" class="push_button red">Dashboard</a>
+        <a href="ArchitectureCms" class="push_button blue">Archetecture-Cms</a>
+        <a href="Postcard" class="push_button green">Postcard</a> 
+        <a href="Instrumatics" class="push_button yellow">Instrumatics</a>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
