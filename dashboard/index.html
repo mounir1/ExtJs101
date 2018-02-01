@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all-debug.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-triton/resources/theme-triton-all-debug.css">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-triton/theme-triton-debug.js"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/packages/charts/classic/charts-debug.js"></script>
+    <link type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/packages/charts/classic/classic/resources/charts-all-debug.css">
+
+    <script type="text/javascript">
+        Ext.application({
+            name: 'cdnjs test with charts package',
+
+            launch: function () {
+                Ext.create('Ext.chart.PolarChart', {
+                    renderTo: document.body,
+                    width: 500,
+                    height: 500,
+                    store: {
+                        fields: ['name', 'g1', 'g2'],
+                        data: [{
+                                "name": "Item-0",
+                                "g1": 18.34,
+                                "g2": 0.04
+                            },
+                            {
+                                "name": "Item-1",
+                                "g1": 2.67,
+                                "g2": 14.87
+                            },
+                            {
+                                "name": "Item-2",
+                                "g1": 1.90,
+                                "g2": 5.72
+                            },
+                            {
+                                "name": "Item-3",
+                                "g1": 21.37,
+                                "g2": 2.13
+                            },
+                            {
+                                "name": "Item-4",
+                                "g1": 2.67,
+                                "g2": 8.53
+                            },
+                            {
+                                "name": "Item-5",
+                                "g1": 18.22,
+                                "g2": 4.62
+                            }
+                        ]
+                    },
+
+                    interactions: ['rotate'],
+
+                    //configure the legend.
+                    legend: {
+                        docked: 'bottom'
+                    },
+
+                    //describe the actual pie series.
+                    series: [{
+                        type: 'pie',
+                        xField: 'g1',
+                        label: {
+                            field: 'name',
+                            display: 'rotate'
+                        },
+                        donut: 25,
+                        style: {
+                            miterLimit: 10,
+                            lineCap: 'miter',
+                            lineWidth: 2
+                        }
+                    }]
+                });
+                Ext.create({
+                    xtype: 'cartesian',
+                    renderTo: document.body,
+                    width: 600,
+                    height: 400,
+                    store: {
+                        fields: ['name', 'value'],
+                        data: [{
+                            name: 'metric one',
+                            value: 10
+                        }, {
+                            name: 'metric two',
+                            value: 7
+                        }, {
+                            name: 'metric three',
+                            value: 5
+                        }, {
+                            name: 'metric four',
+                            value: 2
+                        }, {
+                            name: 'metric five',
+                            value: 27
+                        }]
+                    },
+                    axes: [{
+                        type: 'numeric',
+                        position: 'left',
+                        title: {
+                            text: 'Sample Values',
+                            fontSize: 15
+                        },
+                        fields: 'value'
+                    }, {
+                        type: 'category',
+                        position: 'bottom',
+                        title: {
+                            text: 'Sample Values',
+                            fontSize: 15
+                        },
+                        fields: 'name'
+                    }],
+                    series: {
+                        type: 'bar',
+                        subStyle: {
+                            fill: ['#388FAD'],
+                            stroke: '#1F6D91'
+                        },
+                        xField: 'name',
+                        yField: 'value'
+                    }
+                });
+                Ext.create({
+                    xtype: 'polar',
+                    renderTo: document.body,
+                    width: 400,
+                    height: 400, 
+                    theme: 'green',
+                    interactions: ['rotate', 'itemhighlight'],
+                    store: {
+                        fields: ['name', 'data1'],
+                        data: [{
+                            name: 'metric one',
+                            data1: 14
+                        }, {
+                            name: 'metric two',
+                            data1: 16
+                        }, {
+                            name: 'metric three',
+                            data1: 14
+                        }, {
+                            name: 'metric four',
+                            data1: 6
+                        }, {
+                            name: 'metric five',
+                            data1: 36
+                        }]
+                    },
+                    series: {
+                        type: 'pie',
+                        highlight: true,
+                        angleField: 'data1',
+                        label: {
+                            field: 'name',
+                            display: 'rotate'
+                        },
+                        donut: 30
+                    }
+                });
+                Ext.create({
+                    xtype: 'polar',
+                    renderTo: document.body,
+                    width: 600,
+                    height: 400, 
+                    store: {
+                        fields: ['mph', 'fuel', 'temp', 'rpm'],
+                        data: [{
+                            mph: 65,
+                            fuel: 50,
+                            temp: 150,
+                            rpm: 6000
+                        }]
+                    },
+                    series: {
+                        type: 'gauge',
+                        colors: ['#1F6D91', '#90BCC9'],
+                        angleField: 'mph',
+                        needle: true,
+                        donut: 30
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

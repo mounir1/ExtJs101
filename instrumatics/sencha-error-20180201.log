@@ -1,0 +1,54 @@
+Sencha Cmd 6.5.2.15 - Crash report
+================================================
+An error occurred while executing the following command: -sdk ./sdk generate app Instrumatics
+
+Diagnostic information:
+=======================
+                          cmd.config.dir : /Users/mounir/bin/Sencha/Cmd/6.5.2.15             
+                                 cmd.dir : /Users/mounir/bin/Sencha/Cmd/6.5.2.15             
+              cmd.merge.tool.args.araxis : -wait -merge -3 -a1 {base} {user} {generated} {out}
+              cmd.merge.tool.args.kdiff3 : {base} {user} {generated} -o {out}                
+             cmd.merge.tool.args.p4merge : {base} {user} {generated} {out}                   
+           cmd.merge.tool.args.smartsync : {user} {generated} {base}                         
+          cmd.merge.tool.args.sourcegear : --merge --result={out} {user} {base} {generated}  
+            cmd.merge.tool.args.tortoise : -base:{base} -theirs:{generated} -mine:{user} -merged:{out}
+                              cmd.minver : 3.0.0.0                                           
+                            cmd.platform : osx                                               
+                     cmd.unicode.escapes : /Users/mounir/bin/Sencha/Cmd/6.5.2.15/unicode-escapes.json
+                             cmd.version : 6.5.2.15                                          
+                            cmd.web.port : 1841                                              
+                       inspector.address : http://localhost:1839/                            
+                          repo.local.dir : /Users/mounir/bin/Sencha/Cmd/repo                 
+                       shared.sencha.dir : false                                             
+        system.java.net.useSystemProxies : true                                              
+
+Exception information:
+=======================
+com.sencha.exceptions.ExState: Not a framework directory : ./sdk
+     at com.sencha.cli.AbstractCommand$Property.set(AbstractCommand.java:408)
+     at com.sencha.cli.AbstractCommand.processConfigParam(AbstractCommand.java:530)
+     at com.sencha.cli.AbstractCommand.configure(AbstractCommand.java:114)
+     at com.sencha.command.Sencha.main(Sencha.java:135)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:497)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:65)
+     at com.install4j.runtime.launcher.UnixLauncher.main(UnixLauncher.java:57)
+   Caused by: Not a framework directory : ./sdk
+     at com.sencha.command.Sencha.setSdkPath(Sencha.java:434)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:497)
+     at com.sencha.cli.AbstractCommand$Property.set(AbstractCommand.java:396)
+     at com.sencha.cli.AbstractCommand.processConfigParam(AbstractCommand.java:530)
+     at com.sencha.cli.AbstractCommand.configure(AbstractCommand.java:114)
+     at com.sencha.command.Sencha.main(Sencha.java:135)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:497)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:65)
+     at com.install4j.runtime.launcher.UnixLauncher.main(UnixLauncher.java:57)
+
