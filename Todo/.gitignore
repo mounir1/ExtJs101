@@ -1,0 +1,8 @@
+/build
+/ext
+bootstrap.*
+classic.jsonp
+modern.jsonp
+sencha*
+.firebaserc
+firebase.json
