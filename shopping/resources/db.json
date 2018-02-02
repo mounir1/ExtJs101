@@ -1,0 +1,109 @@
+{
+    "category": [{
+        "id": 1,
+        "name": "Juice"
+    }, {
+        "id": 2,
+        "name": "Hard Drinks"
+    }, {
+        "id": 3,
+        "name": "Soft Drinks"
+    }, {
+        "id": 4,
+        "name": "Lemonades"
+    }, {
+        "id": 5,
+        "name": "Coffees"
+    }, {
+        "id": 6,
+        "name": "Teas"
+    }, {
+        "id": 7,
+        "name": "IPA"
+    }],
+
+    "product": [
+        {
+            "id": 1,
+            "name": "Coke",
+            "imagePath": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png",
+            "description": "",
+            "price": "45",
+            "previousPrice": "",
+            "brewery": "",
+            "features": "",
+            "categoryId": "2"
+        },
+        {
+            "id": 2,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }, {
+            "id": 3,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }, {
+            "id": 4,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }, {
+            "id": 5,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }, {
+            "id": 6,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }, {
+            "id": 7,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }, {
+            "id": 8,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }, {
+            "id": 9,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        },
+        {
+            "id": 10,
+            "name": "Sierra Nevada Torpedo Extra IPA ",
+            "price ": " 19.99 ",
+            "categoryId": "2",
+            "imagePath ": "https://buy.shareacoke.com/media/social/share-1-my-friends-0.1.0-2-small.png"
+        }
+    ],
+    "cart": [{
+        "productId": "54",
+        "productName": "5",
+        "price": "542",
+        "quantity": "546"
+    }],
+    "order": [{
+        "date": "",
+        "totalCost": "",
+        "items": "",
+        "productId": "",
+        "productName": "",
+        "price": "",
+        "quantity": ""
+    }]
+}
