@@ -1,5 +1,5 @@
 Ext.define('Alcohology.view.account.Account', {
-    extend: 'Ext.Window',
+    extend: 'Ext.window.Window',
     xtype: 'account',
     layout: 'fit',
     controller: 'account',

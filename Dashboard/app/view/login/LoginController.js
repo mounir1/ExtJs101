@@ -15,6 +15,7 @@ Ext.define('Todo.view.login.LoginController', {
 
         // Add the main view to the viewport
         Ext.create({
+            
             xtype: 'app-main'
         });
 

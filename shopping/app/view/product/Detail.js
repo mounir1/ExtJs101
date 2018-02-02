@@ -1,5 +1,5 @@
 Ext.define('Alcohology.view.product.Detail', {
-    extend: 'Ext.Window',
+    extend: 'Ext.window.Window',
     modal: true,
     header: false,
     resizable: false,

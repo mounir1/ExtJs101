@@ -21,10 +21,10 @@ Ext.define('Todo.model.User', {
     proxy : {
         type : 'ajax',
         api : {
-            read : 'data1.json',
-            create : 'myurl/create',
-            update : 'myurl/update',
-            destroy : 'myurl/destroy'
+            read : '/resources/db.json',
+            create : 'http://locahost:1841/resources/create',
+            update : 'http://locahost:1841/resources/update',
+            destroy : 'http://locahost:1841/resources/destroy'
         },
         reader : {
             type : 'json',

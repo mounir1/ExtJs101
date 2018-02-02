@@ -11,7 +11,8 @@ Ext.define('New.view.main.Main', {
         'Ext.MessageBox',
         'Ext.layout.Fit',
         'Todo.view.login.Login',
-        'Todo.view.Grid'   
+        'Todo.view.Grid',
+        'Todo.chart.Line'   
     ],
 
     controller: 'main',

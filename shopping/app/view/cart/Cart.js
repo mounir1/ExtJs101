@@ -1,5 +1,5 @@
 Ext.define('Alcohology.view.cart.Cart', {
-    extend: 'Ext.Window',
+    extend: 'Ext.window.Window',
     requires: ['Alcohology.view.cart.CartController'],
     controller: 'cart',
     width: 500,

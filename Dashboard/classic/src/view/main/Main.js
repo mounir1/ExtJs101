@@ -2,15 +2,17 @@
 Ext.define('New.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
-
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
         'New.view.main.MainController',
         'New.view.main.MainModel',
-        'New.view.main.List' ,
+        'New.view.main.List',
         'Todo.view.login.Login',
-        'Todo.view.Grid'           
+        'Todo.view.Grid',
+        'Todo.view.form.Main',
+        'Todo.view.form.PopupForm',
+        'Todo.view.dash.Dashboard'
     ],
 
     controller: 'main',
@@ -73,7 +75,6 @@ Ext.define('New.view.main.Main', {
     items: [{
             title: 'Home',
             iconCls: 'fa-home',
-            // The following grid shares a store with the classic version's grid as well!
             items: [{
                 xtype: 'mainlist'
             }]
@@ -84,33 +85,28 @@ Ext.define('New.view.main.Main', {
             items: [{
                 xtype: 'maingrid'
             }]
-        }, {
-            title: 'Login',
-            iconCls: 'fa-cog',
-            xtype : 'login'
-        },  {
-            title: 'Component',
-            xtype: 'component',
-            iconCls: 'fa-twitter',
-            bind: {
-                html: '{introText}'
-            }
         },
         {
-            title: 'Button',
-            xtype: 'button',
-            iconCls: 'fa-google',
-            bind: {
-                text: '{buttonText}',
-                handler: 'onClickButton'
-            }
+            title: 'Employees',
+            xtype: 'tabpanel',
+            iconCls: 'x-fa fa-users',
+
         },
         {
-            title: 'Developer', 
-            iconCls: 'fa-code', 
-            bind: {
-                html: '{mounir}' 
-            }
+            title: 'Developer',
+            iconCls: 'fa-code',
+            xtype: 'container',
+            layout: 'border',
+            items: [{
+                xtype: 'panel',
+                region: 'west',
+                title: 'Navigation',
+                width: 200,
+                split: 2
+            }, {
+                xtype: 'simple-dash',
+                region: 'center'
+            }]
         }
     ]
 });

@@ -1,5 +1,5 @@
 Ext.define('Alcohology.view.main.Main', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.grid.Panel',
     xtype: 'app-main',
     controller: 'main',
     viewModel: 'main',
@@ -14,7 +14,6 @@ Ext.define('Alcohology.view.main.Main', {
     ],
     header: {
         xtype: 'app-header'
-
     },
     items: [{
             title:'categories',
