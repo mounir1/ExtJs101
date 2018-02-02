@@ -1,0 +1,28 @@
+@mixin wizard-progress-ui( $ui: null, $ui-border-color: #2163A3, $ui-background-color: #ffffff, $ui-button-border-width: 4px, $ui-button-border-radius: 20px) {
+    .wizard-progress-#{$ui} {
+        padding: 10px 0;
+        .#{$prefix}btn:last-child {
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+        .#{$prefix}btn {
+            margin: 0 10px;
+        }
+        .#{$prefix}btn:first-child {
+            margin-right: 20px;
+            margin-left: 0px;
+        }
+        @include extjs-button-small-ui( $ui: 'default', $border-radius: $ui-button-border-radius, $border-width: $ui-button-border-width, $background-color: $ui-background-color, $background-color-disabled: mix($ui-border-color, $uibackground-color, 50%), $border-color: $ui-border-color, $color: black, $color-disabled: shade($ui-border-color, 50%), $opacity-disabled: 0.9999, $inner-opacity-disabled: 0.9999);
+        .wizard-progress-bar {
+            width: 100%;
+            background: $ui-border-color;
+            height: $ui-button-border-width * 1.5;
+            position: absolute;
+            top: 50%;
+            margin-top: -(($ui-button-border-width * 1.5) / 2);
+        }
+    }
+}
+
+@include wizard-progress-ui( $ui: 'default', $ui-border-color: #ff69b4, $ui-background-color: #ffffff, $ui-button-border-width: 1px, $ui-button-border-radius: 4px);
+@include wizard-progress-ui( $ui: 'default');
