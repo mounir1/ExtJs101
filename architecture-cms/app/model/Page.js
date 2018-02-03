@@ -7,8 +7,8 @@ Ext.define('ArchitectureCms.model.Page', {
     },
     schema: {
         namespace: 'ArchitectureCms.model',
-        // urlPrefix: 'http://localhost:3000',
-        urlPrefix: 'https://extjs65.firebaseio.com/cms',
+        urlPrefix: 'http://localhost:3000',
+        // urlPrefix: 'https://extjs65.firebaseio.com/cms',
         proxy: {
 
             type: 'rest',
