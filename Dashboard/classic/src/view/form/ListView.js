@@ -1,6 +1,7 @@
 Ext.define('Todo.view.form.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'tabpanel',
+    width: '100%',
     controller: 'listview',
     require: [
         'Todo.store.Employees',
@@ -11,7 +12,7 @@ Ext.define('Todo.view.form.Main', {
             xtype: 'grid',
             iconCls: 'x-fa fa-users',
             grouped: true,
-            
+            width: '100%',
             store: {
                 type: 'employees',
                 autoLoad: true,
@@ -32,20 +33,51 @@ Ext.define('Todo.view.form.Main', {
                 flex: 1
             }],
             listeners: {
-                 //for Classic
+                //for Classic
 
-                itemclick:  
-                    
-                function(grid, record, item, index, e, eOpts) {
-                    Ext.Msg.alert('Info',`You have clicked on ${index+1} item`);
-                }
-                ,
+                itemclick: function (grid, record, item, index, e, eOpts) {
+                        Ext.create('Ext.window.Window', {
+                            title: 'Emplyee',
+                            layout: 'card',
+                            items: [{
+                                    xtype: 'panel',
+                                    width: 400,
+                                    height: 600,
+                                    layout: 'fit',
+                                    record: record,
+                                    viewModel: {
+                                        data: {
+                                            employee: record
+                                        }
+                                    }
+                                },
+
+                                {
+                                    xtype: 'panel',
+                                    title: 'First',
+                                    html: 'This is the first panel'
+                                },
+                                {
+                                    xtype: 'panel',
+                                    title: 'Second',
+                                    html: 'This is the second panel'
+                                }
+                            ],
+
+                        })
+
+                    }
+                    // function(grid, record, item, index, e, eOpts) {
+                    //     Ext.Msg.alert('Info',`You have clicked on ${index+1} item`);
+                    // }
+                    ,
                 //for modern 
-                itemtap: function(grid, index) {
-                    Ext.Msg.alert('Info',`You have tapped on ${index+1} item`);
-                }  
+                itemtap: function (grid, index) {
+                    Ext.Msg.alert('Info', `You have tapped on ${index+1} item`);
+                }
             }
-        }, {
+        },
+        {
             title: 'About Sencha',
             padding: 20,
             iconCls: 'x-fa fa-info-circle',

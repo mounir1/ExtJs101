@@ -4,7 +4,7 @@
 Ext.define('New.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
-
+    width:'100%',
 
     title: 'Personnel',
 

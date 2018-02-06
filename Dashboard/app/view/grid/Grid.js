@@ -2,7 +2,7 @@ Ext.define('Todo.view.Grid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.mygridpanel',
     xtype: 'maingrid',
-
+    width:'100%',
     requires: [
         'Todo.view.GridController',
         'Todo.view.GridModel'
@@ -78,7 +78,7 @@ Ext.define('Todo.view.Grid', {
                         xtype: 'textfield',
                         fieldLabel: 'First Name',
                         allowBlank: false,
-                        labelStyle:'text-align:right;border:solid 1px white',
+                        labelStyle:'text-align:right;border:solid 1px blue;white-space: pre-wrap;',
                         margin: '0,0,0,10',
                         name: 'first_name'
                     },
@@ -86,7 +86,7 @@ Ext.define('Todo.view.Grid', {
                         xtype: 'textfield',
                         fieldLabel: 'Last Name',
                         allowBlank: false,
-                        labelStyle:'text-align:right;border:solid 1px white',
+                        labelStyle:'text-align:right;border:solid 1px blue;white-space: pre-wrap;',
                         margin: '0,0,0,10', 
                         name: 'last_name'
                     },
@@ -94,7 +94,7 @@ Ext.define('Todo.view.Grid', {
                         xtype: 'textfield',
                         fieldLabel: 'Phone Number',
                         allowBlank: false,
-                        labelStyle:'text-align:right;border:solid 1px white',
+                        labelStyle:'text-align:right;border:solid 1px blue;white-space: pre-wrap;',
                         margin: '0,0,0,10',
                         name: 'phone_number'
                     }

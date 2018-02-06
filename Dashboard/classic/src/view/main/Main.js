@@ -92,6 +92,12 @@ Ext.define('New.view.main.Main', {
             iconCls: 'x-fa fa-users',
 
         },
+         {
+            title: 'Login',
+            xtype: 'login',
+            iconCls: 'x-fa fa-users',
+
+        },
         {
             title: 'Developer',
             iconCls: 'fa-code',

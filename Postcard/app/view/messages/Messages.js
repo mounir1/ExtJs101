@@ -1,5 +1,5 @@
 Ext.define('Postcard.view.messages.Messages', {
-    extend: 'Ext.Panel',
+    extend: 'Ext.panel.Panel',
     xtype: 'messages',
     controller: 'messages',
     viewModel: 'messages',

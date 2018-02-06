@@ -1,0 +1,35 @@
+[debug] [2018-02-05T09:17:46.213Z] ----------------------------------------------------------------------
+[debug] [2018-02-05T09:17:46.217Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-02-05T09:17:46.218Z] CLI Version:   3.17.4
+[debug] [2018-02-05T09:17:46.218Z] Platform:      darwin
+[debug] [2018-02-05T09:17:46.218Z] Node Version:  v6.10.2
+[debug] [2018-02-05T09:17:46.218Z] Time:          Mon Feb 05 2018 12:17:46 GMT+0300 (+03)
+[debug] [2018-02-05T09:17:46.219Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-05T09:17:46.310Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-05T09:17:46.311Z] > authorizing via signed-in user
+[debug] [2018-02-05T09:17:46.314Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-05T09:17:46.315Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/vgRbKuKaqCd_WyS7rlpZFXCaqBxWoBR9c05IokMEdww',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Feb 05 2018 12:17:46 GMT+0300 (+03)
+[debug] [2018-02-05T09:17:47.701Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-05T09:17:47.705Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/extjs65  
+  
+ Mon Feb 05 2018 12:17:47 GMT+0300 (+03)
+[debug] [2018-02-05T09:17:48.718Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-05T09:17:48.720Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/extjs65/tokens  
+  
+ Mon Feb 05 2018 12:17:48 GMT+0300 (+03)
+[debug] [2018-02-05T09:17:49.573Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'extjs65'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing www directory for upload...
+[debug] [2018-02-05T09:19:57.670Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/extjs65/uploads/-L4_FSkndK_qz2Hj7q-O?fileCount=34706&message=  
+  
+ Mon Feb 05 2018 12:19:57 GMT+0300 (+03)
