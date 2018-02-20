@@ -1,5 +1,5 @@
 Ext.define('Todo.view.dash.Dashboard', {
-    extend: 'Ext.dashboard.Dashboard',
+    extend: 'Ext.Container',
     xtype: 'simple-dash', 
     maxColumns: 2,
     stateful: true,

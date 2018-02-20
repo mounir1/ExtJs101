@@ -1,5 +1,5 @@
 Ext.define('Todo.view.Grid', {
-    extend: 'Ext.grid.Panel',
+    extend: 'Ext.Panel',
     alias: 'widget.mygridpanel',
     xtype: 'maingrid',
     width:'100%',
