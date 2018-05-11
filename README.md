@@ -5,5 +5,5 @@ moved to a private repo
  resources need to be served for each project app . I use json-server to serve to http://localhost:3000
  <br /> 
  
-check updates https://educaper.site/Ext101/ 
+check updates https://educaper.site/News/ 
 contact for extra packages .
